@@ -1,4 +1,4 @@
-package com.sid.sephora
+package com.sid.sephoraproduct
 
 import org.junit.Test
 
