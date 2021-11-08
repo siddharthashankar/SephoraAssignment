@@ -48,7 +48,7 @@ class SephoraProductListActivity : BaseActivity(), OnSephoraProductListener {
         })
     }
 
-    private fun initRecyclerView() {
+    fun initRecyclerView() {
         mAdapter = SephoraDataRecyclerAdapter(this)
         val decoration = VerticalSpacingItemDecoration(5)
         recyclerView?.addItemDecoration(decoration)
@@ -82,6 +82,6 @@ class SephoraProductListActivity : BaseActivity(), OnSephoraProductListener {
     }
 
     companion object {
-        private const val TAG = "RecipeListActivity"
+        private const val TAG = "SephoraProductListActivity"
     }
 }

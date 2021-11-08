@@ -31,7 +31,6 @@ class ProductDetailsActivity : BaseActivity() {
     val imageUrls: ArrayList<String>? = null
     var arraylist = ArrayList<String>()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product)
@@ -56,8 +55,6 @@ class ProductDetailsActivity : BaseActivity() {
         };
         carouselView.setImageListener(imageListener);
     }
-
-
 
     private fun subscribeObservers() {
         mRecipeListViewModel!!.recipes.observe(this, { recipes ->
@@ -127,7 +124,7 @@ class ProductDetailsActivity : BaseActivity() {
     }
 
     companion object {
-        private const val TAG = "RecipeActivity"
+        private const val TAG = "ProductDetailsActivity"
     }
 
     var imageListener: ImageListener = object : ImageListener {

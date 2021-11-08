@@ -19,7 +19,6 @@ class ProductRepository private constructor() {
                 mSephoraData.setValue(recipes)
                 doneQuery(recipes)
             } else {
-                // search database cache
                 doneQuery(null)
             }
         }
